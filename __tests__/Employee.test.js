@@ -1,14 +1,16 @@
 const Employee = require('../lib/Employee')
 
 describe('Employee', () => {
+    const employee = new Employee(1, 'Cody', 'cody@gmail.com')
     describe('Initialization', () => {
-        const employee = new Employee(1, 'Cody', 'cody@gmail.com')
 
         it('should intialize with expected arguments', () => {
             expect(employee.id).toBe(1)
             expect(employee.name).toBe('Cody')
             expect(employee.email).toBe('cody@gmail.com')
         })
+    })
+    describe('Methods', () => {
         it('getName method should return expected argument', () => {
             expect(employee.getName()).toBe('Cody')
         })
@@ -24,5 +26,6 @@ describe('Employee', () => {
             expect(employee.getRole()).toBe('Employee')
 
         })
+
     })
 })
