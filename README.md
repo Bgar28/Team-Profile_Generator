@@ -1,8 +1,9 @@
-# Team-Profile_Generator
+# Team Profile Generator
   ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
   ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
   ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
   
   
   ## Description 
@@ -20,7 +21,7 @@
   Git clone this repository and then run npm install in the terminal to load the package dependencies from the package.json file.
 
   To start the application, open the terminal and enter "node index.js" in the command line. <br/>
-  You are welcomed with a prompt. <br/>
+  You are welcomed with a message. <br/>
   You are then given a series of prompts that will determine what is included within your team profile. <br/>
   First, you are asked questions about the manager's name, id, email, and office phone number. Then you are given a prompt containing a list of choices which include "engineer", "intern", and "I dont want to add any more members." This prompt appears after each member's info is entered, giving the user a chance to end the application whenever their team is complete. Questions about the engineer consists of name, id, email, and github username. Questions about the intern consists of name, id, email, and school name. <br/>
   Once the user selects "I dont want to add any more members", your HTML is generated and accessible via the dist folder and a success message is displayed in the terminal. <br/>
@@ -37,7 +38,9 @@
   ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
   ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
   ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+  ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
   
   
 
