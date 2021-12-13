@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Bgar28/Team-Profile_Generator#readme",
   "dependencies": {
+    "chalk": "^5.0.0",
     "inquirer": "^8.2.0",
     "jest": "^27.4.4"
   }

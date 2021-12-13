@@ -31,7 +31,7 @@ const managerPrompts = () => {
     },
     {
         type: 'input',
-        message: "What is your team manager's office number?",
+        message: "What is your team manager's office phone number?",
         name: 'manager_office_number'
     }
     ]).then(({manager_id, manager_name, manager_email, manager_office_number}) =>{
@@ -130,11 +130,9 @@ const getNextMember = () => {
             case 'Intern':
                 return internPrompts()
             case 'I dont want to add any more team members':
-                // use data from results object for fs 
                 let generatedHtml = generateHtml(results)
-                fs.writeFileSync('./dist/index.html', generatedHtml)
-                // console.log(generatedHtml)
-                // console.log(results)
+                fs.writeFileSync('./dist/dashboard.html', generatedHtml)
+                console.log("Congrats your team profile has been generated inside of the 'dist' folder")
                 break 
         }
     })
@@ -142,7 +140,6 @@ const getNextMember = () => {
 
 const runInquirer = () => {
     managerPrompts()
-    
 }
 
 
