@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const generateHtml = require('./src/generateHtml');
+const fs = require('fs');
 
 const results = []
 
@@ -36,7 +38,7 @@ const managerPrompts = () => {
         const manager = new Manager(manager_id, manager_name, manager_email, manager_office_number)
 
         if(manager){
-            results.push({...manager, type: 'manager'}) 
+            results.push(manager) 
             getNextMember()
         }
     })
@@ -68,7 +70,7 @@ const engineerPrompts = () => {
         const engineer = new Engineer(engineer_id, engineer_name, engineer_email, engineer_github)
 
         if(engineer){
-            results.push({...engineer, type: 'engineer'}) 
+            results.push(engineer) 
             getNextMember()
         }
     })
@@ -100,7 +102,7 @@ const internPrompts = () => {
         const intern = new Intern(intern_id, intern_name, intern_email, intern_school)
 
         if(intern){
-            results.push({...intern, type: 'intern'}) 
+            results.push(intern) 
             getNextMember()
         }
     })
@@ -129,7 +131,11 @@ const getNextMember = () => {
                 return internPrompts()
             case 'I dont want to add any more team members':
                 // use data from results object for fs 
-                return console.log(results)
+                let generatedHtml = generateHtml(results)
+                fs.writeFileSync('./dist/index.html', generatedHtml)
+                // console.log(generatedHtml)
+                // console.log(results)
+                break 
         }
     })
 }
