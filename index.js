@@ -8,7 +8,7 @@ const fs = require('fs');
 const results = []
 
 const run = () => {
-    console.log('Welcome to the team generator! \n\nUse npm reset to reset the dist/ folder \n')
+    console.log('Welcome to the team generator! \n\nPlease answer the follwing prompts to build a team\n')
     runInquirer()
 }
 
